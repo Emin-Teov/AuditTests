@@ -8,7 +8,15 @@ function shuffle(array) {
 }
 
 const body = document.querySelector('body');
-const questions = body.querySelector('.questions');const question_0 = questions.querySelector('#question_0');
+const questions = body.querySelector('.questions');
+const is_phone = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+const reload = body.querySelector('.reload');
+
+reload.addEventListener(is_phone ? "touchstart" : "mousedown", ()=>{
+    window.location.reload();
+});
+
+const question_0 = questions.querySelector('#question_0');
 const ul0_answer = question_0.querySelector('#answers_0');
 const answer0_box = ul0_answer.querySelectorAll('.qt-answer');
 const answers_0 = [
@@ -31,7 +39,9 @@ answer0_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_1 = questions.querySelector('#question_1');
+});
+
+const question_1 = questions.querySelector('#question_1');
 const ul1_answer = question_1.querySelector('#answers_1');
 const answer1_box = ul1_answer.querySelectorAll('.qt-answer');
 const answers_1 = [
@@ -54,7 +64,9 @@ answer1_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_2 = questions.querySelector('#question_2');
+});
+
+const question_2 = questions.querySelector('#question_2');
 const ul2_answer = question_2.querySelector('#answers_2');
 const answer2_box = ul2_answer.querySelectorAll('.qt-answer');
 const answers_2 = [
@@ -77,7 +89,9 @@ answer2_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_3 = questions.querySelector('#question_3');
+});
+
+const question_3 = questions.querySelector('#question_3');
 const ul3_answer = question_3.querySelector('#answers_3');
 const answer3_box = ul3_answer.querySelectorAll('.qt-answer');
 const answers_3 = [
@@ -100,7 +114,9 @@ answer3_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_4 = questions.querySelector('#question_4');
+});
+
+const question_4 = questions.querySelector('#question_4');
 const ul4_answer = question_4.querySelector('#answers_4');
 const answer4_box = ul4_answer.querySelectorAll('.qt-answer');
 const answers_4 = [
@@ -123,7 +139,9 @@ answer4_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_5 = questions.querySelector('#question_5');
+});
+
+const question_5 = questions.querySelector('#question_5');
 const ul5_answer = question_5.querySelector('#answers_5');
 const answer5_box = ul5_answer.querySelectorAll('.qt-answer');
 const answers_5 = [
@@ -146,7 +164,9 @@ answer5_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_6 = questions.querySelector('#question_6');
+});
+
+const question_6 = questions.querySelector('#question_6');
 const ul6_answer = question_6.querySelector('#answers_6');
 const answer6_box = ul6_answer.querySelectorAll('.qt-answer');
 const answers_6 = [
@@ -169,7 +189,9 @@ answer6_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_7 = questions.querySelector('#question_7');
+});
+
+const question_7 = questions.querySelector('#question_7');
 const ul7_answer = question_7.querySelector('#answers_7');
 const answer7_box = ul7_answer.querySelectorAll('.qt-answer');
 const answers_7 = [
@@ -192,7 +214,9 @@ answer7_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_8 = questions.querySelector('#question_8');
+});
+
+const question_8 = questions.querySelector('#question_8');
 const ul8_answer = question_8.querySelector('#answers_8');
 const answer8_box = ul8_answer.querySelectorAll('.qt-answer');
 const answers_8 = [
@@ -215,7 +239,9 @@ answer8_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_9 = questions.querySelector('#question_9');
+});
+
+const question_9 = questions.querySelector('#question_9');
 const ul9_answer = question_9.querySelector('#answers_9');
 const answer9_box = ul9_answer.querySelectorAll('.qt-answer');
 const answers_9 = [
@@ -238,7 +264,9 @@ answer9_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_10 = questions.querySelector('#question_10');
+});
+
+const question_10 = questions.querySelector('#question_10');
 const ul10_answer = question_10.querySelector('#answers_10');
 const answer10_box = ul10_answer.querySelectorAll('.qt-answer');
 const answers_10 = [
@@ -261,7 +289,9 @@ answer10_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_11 = questions.querySelector('#question_11');
+});
+
+const question_11 = questions.querySelector('#question_11');
 const ul11_answer = question_11.querySelector('#answers_11');
 const answer11_box = ul11_answer.querySelectorAll('.qt-answer');
 const answers_11 = [
@@ -284,7 +314,9 @@ answer11_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_12 = questions.querySelector('#question_12');
+});
+
+const question_12 = questions.querySelector('#question_12');
 const ul12_answer = question_12.querySelector('#answers_12');
 const answer12_box = ul12_answer.querySelectorAll('.qt-answer');
 const answers_12 = [
@@ -307,7 +339,9 @@ answer12_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_13 = questions.querySelector('#question_13');
+});
+
+const question_13 = questions.querySelector('#question_13');
 const ul13_answer = question_13.querySelector('#answers_13');
 const answer13_box = ul13_answer.querySelectorAll('.qt-answer');
 const answers_13 = [
@@ -330,7 +364,9 @@ answer13_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_14 = questions.querySelector('#question_14');
+});
+
+const question_14 = questions.querySelector('#question_14');
 const ul14_answer = question_14.querySelector('#answers_14');
 const answer14_box = ul14_answer.querySelectorAll('.qt-answer');
 const answers_14 = [
@@ -353,7 +389,9 @@ answer14_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_15 = questions.querySelector('#question_15');
+});
+
+const question_15 = questions.querySelector('#question_15');
 const ul15_answer = question_15.querySelector('#answers_15');
 const answer15_box = ul15_answer.querySelectorAll('.qt-answer');
 const answers_15 = [
@@ -376,7 +414,9 @@ answer15_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_16 = questions.querySelector('#question_16');
+});
+
+const question_16 = questions.querySelector('#question_16');
 const ul16_answer = question_16.querySelector('#answers_16');
 const answer16_box = ul16_answer.querySelectorAll('.qt-answer');
 const answers_16 = [
@@ -399,7 +439,9 @@ answer16_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_17 = questions.querySelector('#question_17');
+});
+
+const question_17 = questions.querySelector('#question_17');
 const ul17_answer = question_17.querySelector('#answers_17');
 const answer17_box = ul17_answer.querySelectorAll('.qt-answer');
 const answers_17 = [
@@ -422,7 +464,9 @@ answer17_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_18 = questions.querySelector('#question_18');
+});
+
+const question_18 = questions.querySelector('#question_18');
 const ul18_answer = question_18.querySelector('#answers_18');
 const answer18_box = ul18_answer.querySelectorAll('.qt-answer');
 const answers_18 = [
@@ -445,7 +489,9 @@ answer18_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_19 = questions.querySelector('#question_19');
+});
+
+const question_19 = questions.querySelector('#question_19');
 const ul19_answer = question_19.querySelector('#answers_19');
 const answer19_box = ul19_answer.querySelectorAll('.qt-answer');
 const answers_19 = [
@@ -468,7 +514,9 @@ answer19_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_20 = questions.querySelector('#question_20');
+});
+
+const question_20 = questions.querySelector('#question_20');
 const ul20_answer = question_20.querySelector('#answers_20');
 const answer20_box = ul20_answer.querySelectorAll('.qt-answer');
 const answers_20 = [
@@ -491,7 +539,9 @@ answer20_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_21 = questions.querySelector('#question_21');
+});
+
+const question_21 = questions.querySelector('#question_21');
 const ul21_answer = question_21.querySelector('#answers_21');
 const answer21_box = ul21_answer.querySelectorAll('.qt-answer');
 const answers_21 = [
@@ -514,7 +564,9 @@ answer21_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_22 = questions.querySelector('#question_22');
+});
+
+const question_22 = questions.querySelector('#question_22');
 const ul22_answer = question_22.querySelector('#answers_22');
 const answer22_box = ul22_answer.querySelectorAll('.qt-answer');
 const answers_22 = [
@@ -537,7 +589,9 @@ answer22_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_23 = questions.querySelector('#question_23');
+});
+
+const question_23 = questions.querySelector('#question_23');
 const ul23_answer = question_23.querySelector('#answers_23');
 const answer23_box = ul23_answer.querySelectorAll('.qt-answer');
 const answers_23 = [
@@ -560,7 +614,9 @@ answer23_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_24 = questions.querySelector('#question_24');
+});
+
+const question_24 = questions.querySelector('#question_24');
 const ul24_answer = question_24.querySelector('#answers_24');
 const answer24_box = ul24_answer.querySelectorAll('.qt-answer');
 const answers_24 = [
@@ -583,7 +639,9 @@ answer24_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_25 = questions.querySelector('#question_25');
+});
+
+const question_25 = questions.querySelector('#question_25');
 const ul25_answer = question_25.querySelector('#answers_25');
 const answer25_box = ul25_answer.querySelectorAll('.qt-answer');
 const answers_25 = [
@@ -606,7 +664,9 @@ answer25_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_26 = questions.querySelector('#question_26');
+});
+
+const question_26 = questions.querySelector('#question_26');
 const ul26_answer = question_26.querySelector('#answers_26');
 const answer26_box = ul26_answer.querySelectorAll('.qt-answer');
 const answers_26 = [
@@ -629,7 +689,9 @@ answer26_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_27 = questions.querySelector('#question_27');
+});
+
+const question_27 = questions.querySelector('#question_27');
 const ul27_answer = question_27.querySelector('#answers_27');
 const answer27_box = ul27_answer.querySelectorAll('.qt-answer');
 const answers_27 = [
@@ -652,7 +714,9 @@ answer27_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_28 = questions.querySelector('#question_28');
+});
+
+const question_28 = questions.querySelector('#question_28');
 const ul28_answer = question_28.querySelector('#answers_28');
 const answer28_box = ul28_answer.querySelectorAll('.qt-answer');
 const answers_28 = [
@@ -675,7 +739,9 @@ answer28_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_29 = questions.querySelector('#question_29');
+});
+
+const question_29 = questions.querySelector('#question_29');
 const ul29_answer = question_29.querySelector('#answers_29');
 const answer29_box = ul29_answer.querySelectorAll('.qt-answer');
 const answers_29 = [
@@ -698,7 +764,9 @@ answer29_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_30 = questions.querySelector('#question_30');
+});
+
+const question_30 = questions.querySelector('#question_30');
 const ul30_answer = question_30.querySelector('#answers_30');
 const answer30_box = ul30_answer.querySelectorAll('.qt-answer');
 const answers_30 = [
@@ -721,7 +789,9 @@ answer30_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_31 = questions.querySelector('#question_31');
+});
+
+const question_31 = questions.querySelector('#question_31');
 const ul31_answer = question_31.querySelector('#answers_31');
 const answer31_box = ul31_answer.querySelectorAll('.qt-answer');
 const answers_31 = [
@@ -744,7 +814,9 @@ answer31_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_32 = questions.querySelector('#question_32');
+});
+
+const question_32 = questions.querySelector('#question_32');
 const ul32_answer = question_32.querySelector('#answers_32');
 const answer32_box = ul32_answer.querySelectorAll('.qt-answer');
 const answers_32 = [
@@ -767,7 +839,9 @@ answer32_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_33 = questions.querySelector('#question_33');
+});
+
+const question_33 = questions.querySelector('#question_33');
 const ul33_answer = question_33.querySelector('#answers_33');
 const answer33_box = ul33_answer.querySelectorAll('.qt-answer');
 const answers_33 = [
@@ -790,7 +864,9 @@ answer33_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_34 = questions.querySelector('#question_34');
+});
+
+const question_34 = questions.querySelector('#question_34');
 const ul34_answer = question_34.querySelector('#answers_34');
 const answer34_box = ul34_answer.querySelectorAll('.qt-answer');
 const answers_34 = [
@@ -813,7 +889,9 @@ answer34_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_35 = questions.querySelector('#question_35');
+});
+
+const question_35 = questions.querySelector('#question_35');
 const ul35_answer = question_35.querySelector('#answers_35');
 const answer35_box = ul35_answer.querySelectorAll('.qt-answer');
 const answers_35 = [
@@ -836,7 +914,9 @@ answer35_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_36 = questions.querySelector('#question_36');
+});
+
+const question_36 = questions.querySelector('#question_36');
 const ul36_answer = question_36.querySelector('#answers_36');
 const answer36_box = ul36_answer.querySelectorAll('.qt-answer');
 const answers_36 = [
@@ -859,7 +939,9 @@ answer36_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_37 = questions.querySelector('#question_37');
+});
+
+const question_37 = questions.querySelector('#question_37');
 const ul37_answer = question_37.querySelector('#answers_37');
 const answer37_box = ul37_answer.querySelectorAll('.qt-answer');
 const answers_37 = [
@@ -882,7 +964,9 @@ answer37_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_38 = questions.querySelector('#question_38');
+});
+
+const question_38 = questions.querySelector('#question_38');
 const ul38_answer = question_38.querySelector('#answers_38');
 const answer38_box = ul38_answer.querySelectorAll('.qt-answer');
 const answers_38 = [
@@ -905,7 +989,9 @@ answer38_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_39 = questions.querySelector('#question_39');
+});
+
+const question_39 = questions.querySelector('#question_39');
 const ul39_answer = question_39.querySelector('#answers_39');
 const answer39_box = ul39_answer.querySelectorAll('.qt-answer');
 const answers_39 = [
@@ -928,7 +1014,9 @@ answer39_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_40 = questions.querySelector('#question_40');
+});
+
+const question_40 = questions.querySelector('#question_40');
 const ul40_answer = question_40.querySelector('#answers_40');
 const answer40_box = ul40_answer.querySelectorAll('.qt-answer');
 const answers_40 = [
@@ -951,7 +1039,9 @@ answer40_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_41 = questions.querySelector('#question_41');
+});
+
+const question_41 = questions.querySelector('#question_41');
 const ul41_answer = question_41.querySelector('#answers_41');
 const answer41_box = ul41_answer.querySelectorAll('.qt-answer');
 const answers_41 = [
@@ -974,7 +1064,9 @@ answer41_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_42 = questions.querySelector('#question_42');
+});
+
+const question_42 = questions.querySelector('#question_42');
 const ul42_answer = question_42.querySelector('#answers_42');
 const answer42_box = ul42_answer.querySelectorAll('.qt-answer');
 const answers_42 = [
@@ -997,7 +1089,9 @@ answer42_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_43 = questions.querySelector('#question_43');
+});
+
+const question_43 = questions.querySelector('#question_43');
 const ul43_answer = question_43.querySelector('#answers_43');
 const answer43_box = ul43_answer.querySelectorAll('.qt-answer');
 const answers_43 = [
@@ -1020,7 +1114,9 @@ answer43_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_44 = questions.querySelector('#question_44');
+});
+
+const question_44 = questions.querySelector('#question_44');
 const ul44_answer = question_44.querySelector('#answers_44');
 const answer44_box = ul44_answer.querySelectorAll('.qt-answer');
 const answers_44 = [
@@ -1043,7 +1139,9 @@ answer44_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_45 = questions.querySelector('#question_45');
+});
+
+const question_45 = questions.querySelector('#question_45');
 const ul45_answer = question_45.querySelector('#answers_45');
 const answer45_box = ul45_answer.querySelectorAll('.qt-answer');
 const answers_45 = [
@@ -1066,7 +1164,9 @@ answer45_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_46 = questions.querySelector('#question_46');
+});
+
+const question_46 = questions.querySelector('#question_46');
 const ul46_answer = question_46.querySelector('#answers_46');
 const answer46_box = ul46_answer.querySelectorAll('.qt-answer');
 const answers_46 = [
@@ -1089,7 +1189,9 @@ answer46_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_47 = questions.querySelector('#question_47');
+});
+
+const question_47 = questions.querySelector('#question_47');
 const ul47_answer = question_47.querySelector('#answers_47');
 const answer47_box = ul47_answer.querySelectorAll('.qt-answer');
 const answers_47 = [
@@ -1112,7 +1214,9 @@ answer47_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_48 = questions.querySelector('#question_48');
+});
+
+const question_48 = questions.querySelector('#question_48');
 const ul48_answer = question_48.querySelector('#answers_48');
 const answer48_box = ul48_answer.querySelectorAll('.qt-answer');
 const answers_48 = [
@@ -1135,7 +1239,9 @@ answer48_box.forEach((box, b) => {
     });
     set_answer.innerHTML = get_answer;
     box.appendChild(set_answer);
-});const question_49 = questions.querySelector('#question_49');
+});
+
+const question_49 = questions.querySelector('#question_49');
 const ul49_answer = question_49.querySelector('#answers_49');
 const answer49_box = ul49_answer.querySelectorAll('.qt-answer');
 const answers_49 = [

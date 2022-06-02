@@ -13,6 +13,17 @@ body {
     background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  
     font-family: 'Roboto', sans-serif;
 }
+
+span.reload{
+    font-family: Lucida Sans Unicode;
+    color: #35ed10af;
+    position: fixed;
+    font-size: 2.5vmax;
+    cursor: pointer;
+    top: 5px;
+    left: 10px;
+}
+
 .questions {
 	display:flex;
     margin: 0 auto;
