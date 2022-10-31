@@ -59,6 +59,7 @@ span.reload{
     list-style: none;
     padding: 0 25px;
     max-width: 1240px;
+    cursor: pointer;
     width: 100%;
     box-shadow: 1px 3px 13px rgba(0,0,0,0.20);
 }
